@@ -1,0 +1,3 @@
+docker run -p 8503:8501 --name tfserving_predictor29 \
+--mount type=bind,source=/home/user/path-to-model/newest_model_2/saved_model/,target=/models/whitefly \
+-e MODEL_NAME=whitefly -t tensorflow/serving
